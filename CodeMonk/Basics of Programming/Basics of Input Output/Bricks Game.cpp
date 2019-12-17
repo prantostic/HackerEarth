@@ -10,7 +10,6 @@ int main(int argc, char const *argv[]) {
 	cin >> n;
 	int i = 0;
 	while (n) {
-		cout << i << " ";
 		if (n == 0) {
 			cout << "Motu\n";
 			break;
