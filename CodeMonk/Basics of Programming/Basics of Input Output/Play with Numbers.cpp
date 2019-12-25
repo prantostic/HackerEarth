@@ -14,7 +14,6 @@ int main(int argc, char const *argv[]) {
 		cin >> array[i];
 		array[i] += array[i - 1];
 	}
-	cout << endl;
 	while (q--) {
 		cin >> l >> r;
 		l--;
