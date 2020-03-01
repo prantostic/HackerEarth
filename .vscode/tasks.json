@@ -10,7 +10,6 @@
             "args": [
                 "-g",
                 "-Wall",
-                "-O2",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.out"
@@ -24,6 +23,25 @@
             "group": {
                 "isDefault": true,
                 "kind": "build"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Cygwin build active file",
+            "command": "D:/cygwin64/bin/g++.exe",
+            "args": [
+                "-g",
+                "-Wall",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true,
             }
         }
     ]
